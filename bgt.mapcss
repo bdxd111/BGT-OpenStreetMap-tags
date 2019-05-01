@@ -2,23 +2,23 @@
 
 
 
-// Terreindeel dat bij een pand of overig bouwwerk hoort, dat niet nader wordt ingewonnen en dat bestaat uit een mengvorm van begroeiing, verharding, en/of water.
+/* Terreindeel dat bij een pand of overig bouwwerk hoort, dat niet nader wordt ingewonnen en dat bestaat uit een mengvorm van begroeiing, verharding, en/of water. */
 *[voorkomen="erf"] {
 }
 
 
 
-// Verharding bestaande uit een materiaal dat niet verwijderbaar is zonder definitieve destructie, zoals bijvoorbeeld bitumen, cement of kunststof
+/* Verharding bestaande uit een materiaal dat niet verwijderbaar is zonder definitieve destructie, zoals bijvoorbeeld bitumen, cement of kunststof. */
 *[voorkomen="gesloten verharding"] {
 	set surface=paved;
 }
 
-// Gesloten verharding bestaande uit asfaltbeton of andere met bitumen gebonden materialen.
+/* Gesloten verharding bestaande uit asfaltbeton of andere met bitumen gebonden materialen. */
 *[voorkomen="gesloten verharding"][voorkomenPlus="asfalt"] {
 	set surface=asphalt;
 }
 
-// Gesloten verharding bestaande uit gewapend of ongewapend beton.
+/* Gesloten verharding bestaande uit gewapend of ongewapend beton. */
 *[voorkomen="gesloten verharding"][voorkomenPlus="cementbeton"] {
 	set surface=concrete;
 }
@@ -26,32 +26,32 @@
 
 
 
-// Verharding gevormd door in verband aangebrachte elementen van beperkte afmetingen, zoals bijvoorbeeld klinkers en tegels.
+/* Verharding gevormd door in verband aangebrachte elementen van beperkte afmetingen, zoals bijvoorbeeld klinkers en tegels. */
 *[voorkomen="open verharding"] {
 	set surface=paved;
 }
 
-// Verharding gemaakt van betonstraatstenen. Straatsteen die als goedkope vervanging van de gebakken klinkers is ontwikkeld.
+/* Verharding gemaakt van betonstraatstenen. Straatsteen die als goedkope vervanging van de gebakken klinkers is ontwikkeld. */
 *[voorkomen="open verharding"][voorkomenPlus="betonstraatstenen"] {
 	set surface=paving_stones;
 }
 
-// Verharding gemaakt van straatbakstenen. Gebakken klinkers worden voornamelijk geproduceerd uit grondstof van eigen bodem - de beddingen van onze rivieren.
+/* Verharding gemaakt van straatbakstenen. Gebakken klinkers worden voornamelijk geproduceerd uit grondstof van eigen bodem - de beddingen van onze rivieren. */
 *[voorkomen="open verharding"][voorkomenPlus="gebakken klinkers"] {
 	set surface=paving_stones;
 }
 
-// Bestrating van tegels, een platte vaak vierkante betonnen steen; veelal gebruikt voor trottoirbestrating.
+/* Bestrating van tegels, een platte vaak vierkante betonnen steen; veelal gebruikt voor trottoirbestrating. */
 *[voorkomen="open verharding"][voorkomenPlus="tegels"] {
 	set surface=paving_stones;
 }
 
-// Bestrating, uitgevoerd in verschillende bestratingsverbanden en -materialen, of in een sierverband, die vooral wordt toegepast uit esthetische overwegingen.
+/* Bestrating, uitgevoerd in verschillende bestratingsverbanden en -materialen, of in een sierverband, die vooral wordt toegepast uit esthetische overwegingen. */
 *[voorkomen="open verharding"][voorkomenPlus="sierbestrating"] {
 	set surface=paving_stones;
 }
 
-// Geprepareerde elementen van beton zoals, trottoirbanden, opsluitbanden en stelconplaten.
+/* Geprepareerde elementen van beton zoals, trottoirbanden, opsluitbanden en stelconplaten. */
 *[voorkomen="open verharding"][voorkomenPlus="beton element"] {
 	set surface="concrete:plates";
 }
@@ -59,32 +59,32 @@
 
 
 
-// Verharding bestaande uit een door verdichting gebonden materiaal, of onsamenhangend materiaal.
+/* Verharding bestaande uit een door verdichting gebonden materiaal, of onsamenhangend materiaal. */
 *[voorkomen="half verhard"] {
 	set surface=unpaved;
 }
 
-// Elementenverharding bestaande uit elementen van beperkte afmetingen die ten behoeve van de doorgroei van grassen en kruiden, zijn voorzien van openingen of met tussenruimten aangebracht.
+/* Elementenverharding bestaande uit elementen van beperkte afmetingen die ten behoeve van de doorgroei van grassen en kruiden, zijn voorzien van openingen of met tussenruimten aangebracht. */
 *[voorkomen="half verhard"][voorkomenPlus="grasklinkers"] {
 	set surface=grass_paver;
 }
 
-// Schelpen.
+/* Schelpen. */
 *[voorkomen="half verhard"][voorkomenPlus="schelpen"] {
 	set surface=compacted;
 }
 
-// Puin is afvalmateriaal dat bestaat uit losse brokstukken, grotendeels bestaande uit stenen en beton, van gesloopte of ingestorte gebouwen, viaducten, bruggen en andere objecten.
+/* Puin is afvalmateriaal dat bestaat uit losse brokstukken, grotendeels bestaande uit stenen en beton, van gesloopte of ingestorte gebouwen, viaducten, bruggen en andere objecten. */
 *[voorkomen="half verhard"][voorkomenPlus="puin"] {
 	set surface=gravel;
 }
 
-// Ongebonden verharding bestaande uit kiezelmateriaal, waarvan de stenen in doorsnede variëren van 1 tot 5 cm.
+/* Ongebonden verharding bestaande uit kiezelmateriaal, waarvan de stenen in doorsnede variëren van 1 tot 5 cm. */
 *[voorkomen="half verhard"][voorkomenPlus="grind"] {
 	set surface=fine_gravel;
 }
 
-// Gravel is een ondergrond van gemalen baksteen die veel wordt gebruikt bij tennis en ook wel op atletiekbanen.
+/* Gravel is een ondergrond van gemalen baksteen die veel wordt gebruikt bij tennis en ook wel op atletiekbanen. */
 *[voorkomen="half verhard"][voorkomenPlus="gravel"] {
 	set surface=dirt;
 }
@@ -92,17 +92,17 @@
 
 
 
-// Geen verharding of aaneengesloten vegetatie aanwezig, niet zijnde zand. Braakliggend valt hier wel onder.
+/* Geen verharding of aaneengesloten vegetatie aanwezig, niet zijnde zand. Braakliggend valt hier wel onder. */
 *[voorkomen="onverhard"] {
 	set surface=unpaved;
 }
 
-// Onverhard met als deklaag boomschors.
+/* Onverhard met als deklaag boomschors. */
 *[voorkomen="onverhard"][voorkomenPlus="boomschors"] {
 	set surface=woodchips;
 }
 
-// Onverhard met als deklaag zand.
+/* Onverhard met als deklaag zand. */
 *[voorkomen="onverhard"][voorkomenPlus="zand"] {
 	set surface=sand;
 	set natural=sand;
@@ -111,23 +111,42 @@
 
 
 
-// Terreindeel begroeid met een dusdanige aantal loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.
+/* Onverhard met als deklaag zand. */
+*[voorkomen="zand"] {
+	set natural=sand;
+}
+
+/* Onbegroeide zandige kustvlakte op de overgang van zee met land. Staat onder invloed van het zeewater en de wind. */
+*[voorkomen="zand"][voorkomenPlus="strand en strandwal"] {
+	set natural=beach;
+	set surface=sand;
+}
+
+/* Een gebied met zandige bodem waarvan delen van het gebied zonder vegetatie zijn, door invloed van wind. */
+*[voorkomen="zand"][voorkomenPlus="zandverstuiving"] {
+	set natural=sand;
+}
+
+
+
+
+/* Terreindeel begroeid met een dusdanige aantal loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen. */
 *[voorkomen="loofbos"] {
 	set landuse=forest;
 	set leaf_type=broadleaved;
 }
 
-// Terreindeel met opgaande begroeiing van loofbomen, in een dicht groeiverband, en die periodiek wordt afgezet.
+/* Terreindeel met opgaande begroeiing van loofbomen, in een dicht groeiverband, en die periodiek wordt afgezet. */
 *[voorkomen="loofbos"][voorkomenPlus="griend en hakhout"] {
 }
 
-// Terreindeel begroeid met een dusdanige aantal naald- en loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.
+/* Terreindeel begroeid met een dusdanige aantal naald- en loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen. */
 *[voorkomen="gemengd bos"] {
 	set landuse=forest;
 	set leaf_type=mixed;
 }
 
-// Terreindeel begroeid met een dusdanige aantal naaldbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen.
+/* Terreindeel begroeid met een dusdanige aantal naaldbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen. */
 *[voorkomen="naaldbos"] {
 	set landuse=forest;
 	set leaf_type=needleleaved;
@@ -136,17 +155,17 @@
 
 
 
-// Terreindeel overwegend begroeid met heide en heideachtige vegetaties. 
+/* Terreindeel overwegend begroeid met heide en heideachtige vegetaties. */
 *[voorkomen="heide"] {
 	set natural=heath;
 }
 
-// Terreindeel bedekt met niet-gecultiveerde (natuurlijke), lage, houtachtige, overblijvende planten gekenmerkt door verschillende vertakkingen dicht bij de wortel en afwezigheid van opvallende stammen.
+/* Terreindeel bedekt met niet-gecultiveerde (natuurlijke), lage, houtachtige, overblijvende planten gekenmerkt door verschillende vertakkingen dicht bij de wortel en afwezigheid van opvallende stammen. */
 *[voorkomen="struiken"] {
 	set natural=scrub;
 }
 
-// Terreindeel zijnde een afscheiding met beperkte breedte en beplant met bomen of struiken.
+/* Terreindeel zijnde een afscheiding met beperkte breedte en beplant met bomen of struiken. */
 *[voorkomen="houtwal"] {
 	set landuse=forest;
 }
@@ -154,23 +173,23 @@
 
 
 
-// Verhoging of heuvel van zand of fijne losse aarde en verpulverd gesteente opgeworpen door wind of door stromend water. 
+/* Verhoging of heuvel van zand of fijne losse aarde en verpulverd gesteente opgeworpen door wind of door stromend water. */
 *[voorkomen="duin"] {
 	set natural=scrub;
 }
 
-// Duin met een overwegend grasachtige vegetatie.
+/* Duin met een overwegend grasachtige vegetatie. */
 *[voorkomen="duin"][voorkomenPlus="open duinvegetatie"] {
 }
 
-// Duin met een overwegend opgaande vegetatie van struiken en of bomen.
+/* Duin met een overwegend opgaande vegetatie van struiken en of bomen. */
 *[voorkomen="duin"][voorkomenPlus="gesloten duinvegetatie"] {
 }
 
 
 
 
-// Terreindeel met een vegetatie bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, dat niet in gebruik is voor agrarische doeleinden.
+/* Terreindeel met een vegetatie bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, dat niet in gebruik is voor agrarische doeleinden. */
 *[voorkomen="grasland overig"] {
 	set landuse=grass;
 }
@@ -178,18 +197,18 @@
 
 
 
-// Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing. 
+/* Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing. */ 
 *[voorkomen="moeras"] {
 	set natural=wetland;
 }
 
-// Terreindeel overwegend begroeid met rietvegetatie.
+/* Terreindeel overwegend begroeid met rietvegetatie. */
 *[voorkomen="rietland"] {
 	set natural=wetland;
 	set wetland=reedbed;
 }
 
-// Buitendijks gelegen aangeslibd land van een wad, dat bij gewone vloed niet meer onder loopt. 
+/* Buitendijks gelegen aangeslibd land van een wad, dat bij gewone vloed niet meer onder loopt. */
 *[voorkomen="kwelder"] {
 	set natural=wetland;
 	set wetland=marsh;
@@ -198,29 +217,29 @@
 
 
 
-// Terreindeel begroeid met fruitbomen in de vorm van hoogstam en laagstamboomgaard, druiven of kleinfruit. 
+/* Terreindeel begroeid met fruitbomen in de vorm van hoogstam en laagstamboomgaard, druiven of kleinfruit. */
 *[voorkomen="fruitteelt"] {
 	set landuse=orchard;
 }
 
-// Terreindeel begroeid met laagstamfruitbomen.
+/* Terreindeel begroeid met laagstamfruitbomen. */
 *[voorkomen="fruitteelt"][voorkomenPlus="laagstam boomgaarden"] {
 }
 
-// Terreindeel begroeid met hoogstamfruitbomen.
+/* Terreindeel begroeid met hoogstamfruitbomen. */
 *[voorkomen="fruitteelt"][voorkomenPlus="hoogstam boomgaarden"] {
 }
 
-// Terreindeel begroeid met druivenstokken voor wijnbouw.
+/* Terreindeel begroeid met druivenstokken voor wijnbouw. */
 *[voorkomen="fruitteelt"][voorkomenPlus="wijngaarden"] {
 	set landuse=vineyard;
 }
 
-// Terreindeel begroeid met heesters voor zachtfruit zoals bessen of frambozen.
+/* Terreindeel begroeid met heesters voor zachtfruit zoals bessen of frambozen. */
 *[voorkomen="fruitteelt"][voorkomenPlus="klein fruit"] {
 }
 
-// Grond in gebruik voor het kweken van jonge siergewassen, bomen enz. ten behoeve van een later gebruik elders.
+/* Grond in gebruik voor het kweken van jonge siergewassen, bomen enz. ten behoeve van een later gebruik elders. */
 *[voorkomen="boomteelt"] {
 	set landuse=orchard;
 }
@@ -228,31 +247,31 @@
 
 
 
-// Terreindeel in gebruik als akker, met gewassen die in een teelt roulatieschema zijn opgenomen. Kan tijdelijk zonder gewas zijn of braak liggen.
+/* Terreindeel in gebruik als akker, met gewassen die in een teelt roulatieschema zijn opgenomen. Kan tijdelijk zonder gewas zijn of braak liggen. */
 *[voorkomen="bouwland"] {
 	set landuse=farmland;
 }
 
-// Terreindeel in gebruik als akker, voor de teelt van akkerbouwgewassen.
+/* Terreindeel in gebruik als akker, voor de teelt van akkerbouwgewassen. */
 *[voorkomen="bouwland"][voorkomenPlus="akkerbouw"] {
 }
 
-// Terrein in gebruik als akker, maar tijdelijk niet beteeld met een landbouwgewas.
+/* Terrein in gebruik als akker, maar tijdelijk niet beteeld met een landbouwgewas. */
 *[voorkomen="bouwland"][voorkomenPlus="braakliggend"] {
 }
 
-// Terreindeel in gebruik als akker, voor de teelt van tuinbouwgewassen
+/* Terreindeel in gebruik als akker, voor de teelt van tuinbouwgewassen. */
 *[voorkomen="bouwland"][voorkomenPlus="vollegrondsteelt"] {
 }
 
-// Terreindeel in gebruik als akker, voor de teelt van bloembollen.
+/* Terreindeel in gebruik als akker, voor de teelt van bloembollen. */
 *[voorkomen="bouwland"][voorkomenPlus="bollenteelt"] {
 }
 
 
 
 
-// Grasland agrarisch
+/* Grasland agrarisch. */
 *[voorkomen="grasland agrarisch"] {
 	set landuse=meadow;
 }
@@ -260,40 +279,40 @@
 
 
 
-// Terreindeel met aangelegde beplanting, meestal gras, heesters of struiken.
+/* Terreindeel met aangelegde beplanting, meestal gras, heesters of struiken. */
 *[voorkomen="groenvoorziening"] {
 	set landuse=grass;
 }
 
-// Opgaande beplanting van houtachtige gewassen die struikvormend en/of boomvormend zijn. De soorten zijn als bosplantsoen opgekweekt en aangeplant.De beplanting kan open of gesloten zijn en bestaat vaak uit inheemse soorten. Onderscheidt zich van heesters omdat de sierkenmerken niet voorop staan.
+/* Opgaande beplanting van houtachtige gewassen die struikvormend en/of boomvormend zijn. De soorten zijn als bosplantsoen opgekweekt en aangeplant.De beplanting kan open of gesloten zijn en bestaat vaak uit inheemse soorten. Onderscheidt zich van heesters omdat de sierkenmerken niet voorop staan. */
 *[voorkomen="groenvoorziening"][voorkomenPlus="bosplantsoen"] {
 	set landuse=forest;
 }
 
-// Gras- en kruidachtigen
+/* Gras- en kruidachtigen. */
 *[voorkomen="groenvoorziening"][voorkomenPlus="gras- en kruidachtigen"] {
 	set landuse=grass;
 }
 
-// Beheerde niet nader gespecificeerde beplanting van groenvak in de openbare ruimte.
+/* Beheerde niet nader gespecificeerde beplanting van groenvak in de openbare ruimte. */
 *[voorkomen="groenvoorziening"][voorkomenPlus="planten"] {
 	set landuse=greenery;
 	set natural=scrub;
 }
 
-// Beheerde beplanting van groenvak in de openbare ruimte, zijnde in struikvorm groeiende rozen.
+/* Beheerde beplanting van groenvak in de openbare ruimte, zijnde in struikvorm groeiende rozen. */
 *[voorkomen="groenvoorziening"][voorkomenPlus="struikrozen"] {
 	set landuse=greenery;
 	set natural=scrub;
 }
 
-// Beplanting van houtige gewassen die struikvormend zijn en die al dan niet een gesloten geheel vormen. Het accent ligt op de sierwaarde, de beplanting kan uit één soort of uit meerdere soorten bestaan. Onder de heesters kan een houtachtige of kruidachtige onderbegroeiing aanwezig zijn. Het oppervlak met struikachtige gewassen is meer dan 50% van de totale oppervlakte van het vak.
+/* Beplanting van houtige gewassen die struikvormend zijn en die al dan niet een gesloten geheel vormen. Het accent ligt op de sierwaarde, de beplanting kan uit één soort of uit meerdere soorten bestaan. Onder de heesters kan een houtachtige of kruidachtige onderbegroeiing aanwezig zijn. Het oppervlak met struikachtige gewassen is meer dan 50% van de totale oppervlakte van het vak. */
 *[voorkomen="groenvoorziening"][voorkomenPlus="heesters"] {
 	set landuse=greenery;
 	set natural=scrub;
 }
 
-// Beheerde beplanting van groenvak in de openbare ruimte, zijnde bodembedekkers.
+/* Beheerde beplanting van groenvak in de openbare ruimte, zijnde bodembedekkers. */
 *[voorkomen="groenvoorziening"][voorkomenPlus="bodembedekkers"] {
 	set landuse=greenery;
 	set natural=scrub;
@@ -302,44 +321,44 @@
 
 
 
-// Uitgestrekt oppervlak zout water.
+/* Uitgestrekt oppervlak zout water. */
 *[voorkomen="zee"] {
 }
 
 
 
 
-// Een voor de waterbeheersing bestemde geul die meestal permanent water bevat (zoals rivier, kanaal, beek, sloot, gracht).
+/* Een voor de waterbeheersing bestemde geul die meestal permanent water bevat (zoals rivier, kanaal, beek, sloot, gracht). */
 *[voorkomen="waterloop"] {
 	set natural=water;
 }
 
-// Het water, dat ten atmosferische neerslag op hellende terreinen valt, vloeit, voor zover het niet verdampt of door planten wordt opgenomen, tezamen tot een waterloop en stroomt naar laaggelegen streken. Zulk een natuurlijke afvloeiing heet een rivier. 
+/* Het water, dat ten atmosferische neerslag op hellende terreinen valt, vloeit, voor zover het niet verdampt of door planten wordt opgenomen, tezamen tot een waterloop en stroomt naar laaggelegen streken. Zulk een natuurlijke afvloeiing heet een rivier. */
 *[voorkomen="waterloop"][voorkomenPlus="rivier"] {
 	set waterway=river;
 }
 
-// Algemene benaming voor een waterloop van beperkte breedte die stilstaand of slechts langzaam stromend water bevat.
+/* Algemene benaming voor een waterloop van beperkte breedte die stilstaand of slechts langzaam stromend water bevat. */
 *[voorkomen="waterloop"][voorkomenPlus="sloot"] {
 	set waterway=ditch;
 }
 
-// Een gegraven grote waterloop die dient voor scheepvaart en/of watertransport. 
+/* Een gegraven grote waterloop die dient voor scheepvaart en/of watertransport. */
 *[voorkomen="waterloop"][voorkomenPlus="kanaal"] {
 	set waterway=canal;
 }
 
-// Een natuurlijke smalle waterloop zonder getij.
+/* Een natuurlijke smalle waterloop zonder getij. */
 *[voorkomen="waterloop"][voorkomenPlus="beek"] {
 	set waterway=stream;
 }
 
-// Een gracht is een gegraven greppel met water, die hoofdzakelijk voorkomt in oude steden.
+/* Een gracht is een gegraven greppel met water, die hoofdzakelijk voorkomt in oude steden. */
 *[voorkomen="waterloop"][voorkomenPlus="gracht"] {
 	set waterway=canal;
 }
 
-// Grondwater dat op natuurlijke wijze uit het aardoppervlak tevoorschijn komt.
+/* Grondwater dat op natuurlijke wijze uit het aardoppervlak tevoorschijn komt. */
 *[voorkomen="waterloop"][voorkomenPlus="bron"] {
 	set waterway=spring;
 }
@@ -347,17 +366,17 @@
 
 
 
-// Alle oppervlakken die vrij permanent met zoet water zijn bedekt. (zoals meer, plas, ven, vijver).
+/* Alle oppervlakken die vrij permanent met zoet water zijn bedekt. (zoals meer, plas, ven, vijver). */
 *[voorkomen="watervlakte"] {
 	set natural=water;
 }
 
-// Een tot ligplaats van schepen geschikt, natuurlijk of gegraven waterbekken aan zee of aan de oever van een rivier of binnenwater, dat beschutting biedt tegen wind en golven.
+/* Een tot ligplaats van schepen geschikt, natuurlijk of gegraven waterbekken aan zee of aan de oever van een rivier of binnenwater, dat beschutting biedt tegen wind en golven. */
 *[voorkomen="watervlakte"][voorkomenPlus="haven"] {
 	set waterway=dock;
 }
 
-// Een massa stilstaand landoppervlaktewater.
+/* Een massa stilstaand landoppervlaktewater. */
 *[voorkomen="watervlakte"][voorkomenPlus="meer, plas, ven, vijver"] {
 	set waterway=lake;
 }
@@ -365,14 +384,14 @@
 
 
 
-// Een ten behoeve van de waterbeheersing gegraven geul die al dan niet met water bedekt is.
+/* Een ten behoeve van de waterbeheersing gegraven geul die al dan niet met water bedekt is. */
 *[voorkomen="greppel, droge sloot"] {
 	set natural=water;
 	set waterway=ditch;
 	set intermittend=yes;
 }
 
-// Buitendijks aangeslibde, onbegroeide grond die bij vrijwel elk hoogwater onderloopt.
+/* Buitendijks aangeslibde, onbegroeide grond die bij vrijwel elk hoogwater onderloopt. */
 *[voorkomen="silk"] {
 	set landuse=mud;
 }
@@ -380,7 +399,7 @@
 
 
 
-// De strook land die in direct contact staat met water, inclusief het gebied tussen de hoogwaterlijn en laagwaterlijn.
+/* De strook land die in direct contact staat met water, inclusief het gebied tussen de hoogwaterlijn en laagwaterlijn. */
 *[voorkomen="oever, slootkant"] {
 	set landuse=grass;
 }
@@ -388,7 +407,7 @@
 
 
 
-// Een rijvormige afscheiding van zeer beperkte breedte bestaande uit aangeplante aaneengesloten struiken.
+/* Een rijvormige afscheiding van zeer beperkte breedte bestaande uit aangeplante aaneengesloten struiken. */
 *[voorkomenPlus="haag"] {
 	set barrier=hedge;
 	set area=yes;
@@ -397,13 +416,13 @@
 
 
 
-// Ondersteunend wegdeel van beperkte omvang, uitgevoerd als verhoging of wegmarkering, dat wordt omsloten door wegdelen en ten doel heeft verkeersstromen te scheiden.
+/* Ondersteunend wegdeel van beperkte omvang, uitgevoerd als verhoging of wegmarkering, dat wordt omsloten door wegdelen en ten doel heeft verkeersstromen te scheiden. */
 *[functie="verkeerseiland"] {
 	set area-highway=traffic_island;
 	set area=yes
 }
 
-// Een strook grond langs een weg of spoorweg.
+/* Een strook grond langs een weg of spoorweg. */
 *[functie="berm"] {
 	set verge=yes;
 }
@@ -411,23 +430,23 @@
 
 
 
-// Wegdeel dat uitsluitend is bestemd en gemarkeerd voor openbaar vervoer en afgescheiden is van de andere wegdelen niet uitsluitend door markering.
+/* Wegdeel dat uitsluitend is bestemd en gemarkeerd voor openbaar vervoer en afgescheiden is van de andere wegdelen niet uitsluitend door markering. */
 *[functie="OV-baan"] {
 	set area-highway=public_transport;
 }
 
-// Een gelijkvloerse kruising van een wegdeel en een wegdeel type ov-baan met spoor type trein of sneltram.
+/* Een gelijkvloerse kruising van een wegdeel en een wegdeel type ov-baan met spoor type trein of sneltram. */
 *[functie="overweg"] {
 	set landuse=railway;
 	set crossing=railway;
 }
 
-// Gebaand gedeelte voor het verkeer over rails.
+/* Gebaand gedeelte voor het verkeer over rails. */
 *[functie="spoorbaan"] {
 	set landuse=railway;
 }
 
-// Wegdeel uitsluitend bedoeld voor vliegverkeer. 
+/* Wegdeel uitsluitend bedoeld voor vliegverkeer.  */
 *[functie="baan voor vliegverkeer"] {
 	set aeroway=runway;
 }
@@ -435,90 +454,90 @@
 
 
 
-// Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer en met gescheiden rijbanen en ongelijkvloerse kruisingen, daartoe aangeduid met het betreffende verkeersbord.
+/* Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer en met gescheiden rijbanen en ongelijkvloerse kruisingen, daartoe aangeduid met het betreffende verkeersbord. */
 *[functie="rijbaan autosnelweg"] {
 	set area-highway=road;
 	set area=yes;
 }
 
-// Een verbindingsweg is (in principe) een eenrichtingsweg, gelegen binnen een knooppunt of aansluiting, die onderdeel is van de wijze waarop de ongelijkvloersheid is gerealiseerd.
+/* Een verbindingsweg is (in principe) een eenrichtingsweg, gelegen binnen een knooppunt of aansluiting, die onderdeel is van de wijze waarop de ongelijkvloersheid is gerealiseerd. */
 *[functie="rijbaan autosnelweg"][functiePlus="verbindingsweg"] {
 }
 
-// Een (Calamiteiten doorsteek) CADO heeft tot doel het verkeer op een rijbaan via een doorsteek van de weg te kunnen geleiden in geval van een calamiteit of werkzaamheden op de rijbaan. Een tweede doel is het faciliteren van toegang tot rijbanen voor hulpdiensten vanaf andere rijbanen of van een parallelweg.
+/* Een (Calamiteiten doorsteek) CADO heeft tot doel het verkeer op een rijbaan via een doorsteek van de weg te kunnen geleiden in geval van een calamiteit of werkzaamheden op de rijbaan. Een tweede doel is het faciliteren van toegang tot rijbanen voor hulpdiensten vanaf andere rijbanen of van een parallelweg. */
 *[functie="rijbaan autosnelweg"][functiePlus="calamiteitendoorsteek"] {
 }
 
 
 
 
-// Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord.
+/* Wegdeel dat onderdeel is van een weg uitsluitend bestemd voor snelverkeer, daartoe aangeduid met het betreffende verkeersbord. */
 *[functie="rijbaan autoweg"] {
 	set area-highway=road;
 	set area=yes;
 }
 
-// Een verbindingsweg is (in principe) een eenrichtingsweg, gelegen binnen een knooppunt of aansluiting, die onderdeel is van de wijze waarop de ongelijkvloersheid is gerealiseerd. 
+/* Een verbindingsweg is (in principe) een eenrichtingsweg, gelegen binnen een knooppunt of aansluiting, die onderdeel is van de wijze waarop de ongelijkvloersheid is gerealiseerd. */
 *[functie="rijbaan autoweg"][functiePlus="verbindingsweg"] {
 }
 
-// Een (Calamiteiten doorsteek) CADO heeft tot doel het verkeer op een rijbaan via een doorsteek van de weg te kunnen geleiden in geval van een calamiteit of werkzaamheden op de rijbaan. Een tweede doel is het faciliteren van toegang tot rijbanen voor hulpdiensten vanaf andere rijbanen of van een parallelweg.
+/* Een (Calamiteiten doorsteek) CADO heeft tot doel het verkeer op een rijbaan via een doorsteek van de weg te kunnen geleiden in geval van een calamiteit of werkzaamheden op de rijbaan. Een tweede doel is het faciliteren van toegang tot rijbanen voor hulpdiensten vanaf andere rijbanen of van een parallelweg. */
 *[functie="rijbaan autoweg"][functiePlus="calamiteitendoorsteek"] {
 }
 
 
 
 
-// Wegdeel dat onderdeel is van een weg die een verbinding vormt tussen bewoonde oorden of tussen wijken binnen een dorp of stad.
+/* Wegdeel dat onderdeel is van een weg die een verbinding vormt tussen bewoonde oorden of tussen wijken binnen een dorp of stad. */
 *[functie="rijbaan regionale weg"] {
 	set area-highway=road;
 	set area=yes;
 }
 
-// Een verbindingsweg is (in principe) een eenrichtingsweg, gelegen binnen een knooppunt of aansluiting, die onderdeel is van de wijze waarop de ongelijkvloersheid is gerealiseerd. 
+/* Een verbindingsweg is (in principe) een eenrichtingsweg, gelegen binnen een knooppunt of aansluiting, die onderdeel is van de wijze waarop de ongelijkvloersheid is gerealiseerd. */
 *[functie="rijbaan regionale weg"][functiePlus="verbindingsweg"] {
 }
 
-// Verhoging in een regionale rijbaan, bedoeld om het gemotoriseerde verkeer met een lage snelheid te laten rijden.
+/* Verhoging in een regionale rijbaan, bedoeld om het gemotoriseerde verkeer met een lage snelheid te laten rijden. */
 *[functie="rijbaan regionale weg"][functiePlus="drempel"] {
 }
 
 
 
 
-// Wegdeel dat onderdeel is van een weg van lokaal belang.
+/* Wegdeel dat onderdeel is van een weg van lokaal belang. */
 *[functie="rijbaan lokale weg"] {
 	set area-highway=road;
 	set area=yes;
 }
 
-// Verhoging in een regionale rijbaan, bedoeld om het gemotoriseerde verkeer met een lage snelheid te laten rijden.
+/* Verhoging in een regionale rijbaan, bedoeld om het gemotoriseerde verkeer met een lage snelheid te laten rijden. */
 *[functie="rijbaan lokale weg"][functiePlus="drempel"] {
 }
 
 
 
 
-// Wegdeel met name bestemd voor fietsers en, indien toegestaan, bromfietsers en dat afgescheiden is van de andere wegdelen niet uitsluitend door markering. 
+/* Wegdeel met name bestemd voor fietsers en, indien toegestaan, bromfietsers en dat afgescheiden is van de andere wegdelen niet uitsluitend door markering. */
 *[functie=fietspad] {
 	set area-highway=cycleway;
 	set area=yes;
 }
 
-// Wegdeel waar voetgangers gebruik van moeten maken. 
+/* Wegdeel waar voetgangers gebruik van moeten maken. */
 *[functie=voetpad] {
 	set area-highway=footway;
 	set area=yes;
 }
 
-// Voetpad op verkeersinfrastructurele voorziening bestaande uit een constructie van treden, waarop men een hoger of lager gelegen plaats kan bereiken.
+/* Voetpad op verkeersinfrastructurele voorziening bestaande uit een constructie van treden, waarop men een hoger of lager gelegen plaats kan bereiken. */
 *[functie="voetpad op trap"] {
 	set area-highway=footway;
 	set area=yes;
 	set stairs=yes;
 }
 
-// Een wegdeel primair aangelegd voor het gebruik door ruiters.
+/* Een wegdeel primair aangelegd voor het gebruik door ruiters. */
 *[functie="ruiterpad"] {
 	set area-highway=bridleway;
 	set area=yes;
@@ -527,25 +546,25 @@
 
 
 
-// Wegdeel bestemd voor het parkeren van motorvoertuigen.
+/* Wegdeel bestemd voor het parkeren van motorvoertuigen. */
 *[functie="parkeervlak"] {
 	set amenity=parking_space;
 }
 
-// Wegdeel alleen voor het gebruik door voetgangers, waarbij het door voetgangers te gebruiken gebied de volle breedte van de weg beslaat en het gebied een nadrukkelijk openbaar karakter heeft.
+/* Wegdeel alleen voor het gebruik door voetgangers, waarbij het door voetgangers te gebruiken gebied de volle breedte van de weg beslaat en het gebied een nadrukkelijk openbaar karakter heeft. */
 *[functie="voetgangersgebied"] {
 	set area-highway=footway;
 	set highway=pedestrian;
 	set area=yes;
 }
 
-// Toegangswegen, oprijlanen en dergelijke met verkeersfunctie die leiden naar afgelegen erven en terreinen.
+/* Toegangswegen, oprijlanen en dergelijke met verkeersfunctie die leiden naar afgelegen erven en terreinen. */
 *[functie="inrit"] {
 	set area-highway=service;
 	set area=yes;
 }
 
-// Wegdeel waar de verblijfsfunctie (lopen, spelen, ontmoeten enzovoorts) prioriteit heeft boven de verkeersfunctie.
+/* Wegdeel waar de verblijfsfunctie (lopen, spelen, ontmoeten enzovoorts) prioriteit heeft boven de verkeersfunctie. */
 *[functie="woonerf"] {
 	set area-highway=road;
 	set area=yes;
