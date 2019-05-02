@@ -79,7 +79,7 @@
 	set surface=gravel;
 }
 
-/* Ongebonden verharding bestaande uit kiezelmateriaal, waarvan de stenen in doorsnede variëren van 1 tot 5 cm. */
+/* Ongebonden verharding bestaande uit kiezelmateriaal, waarvan de stenen in doorsnede variÃ«ren van 1 tot 5 cm. */
 *[voorkomen="half verhard"][voorkomenPlus="grind"] {
 	set surface=fine_gravel;
 }
@@ -306,7 +306,7 @@
 	set natural=scrub;
 }
 
-/* Beplanting van houtige gewassen die struikvormend zijn en die al dan niet een gesloten geheel vormen. Het accent ligt op de sierwaarde, de beplanting kan uit één soort of uit meerdere soorten bestaan. Onder de heesters kan een houtachtige of kruidachtige onderbegroeiing aanwezig zijn. Het oppervlak met struikachtige gewassen is meer dan 50% van de totale oppervlakte van het vak. */
+/* Beplanting van houtige gewassen die struikvormend zijn en die al dan niet een gesloten geheel vormen. Het accent ligt op de sierwaarde, de beplanting kan uit Ã©Ã©n soort of uit meerdere soorten bestaan. Onder de heesters kan een houtachtige of kruidachtige onderbegroeiing aanwezig zijn. Het oppervlak met struikachtige gewassen is meer dan 50% van de totale oppervlakte van het vak. */
 *[voorkomen="groenvoorziening"][voorkomenPlus="heesters"] {
 	set landuse=greenery;
 	set natural=scrub;
@@ -410,6 +410,58 @@
 /* Een rijvormige afscheiding van zeer beperkte breedte bestaande uit aangeplante aaneengesloten struiken. */
 *[voorkomenPlus="haag"] {
 	set barrier=hedge;
+	set area=yes;
+}
+
+
+
+
+/* Een scheiding gemaakt van steen. */
+*[voorkomen="muur"] {
+	set barrier=wall;
+	set area=yes;
+}
+
+/* Verticale wand ter scheiding van land en water, opgebouwd uit een muur van gemetselde stenen of gestort beton. */
+*[voorkomen="kademuur"] {
+	set barrier=wall;
+	set area=yes;
+}
+
+/* Een grondkerende constructie die bestaat uit een verticaal in de grond geplaatste wand. */
+*[voorkomen="damwand"] {
+	set barrier=wall;
+	set area=yes;
+}
+
+/* Een scheiding bedoeld om geluidshinder in de buitenlucht te verminderen. */
+*[voorkomen="geluidsscherm"] {
+	set barrier=wall;
+	set wall=noise_barrier;
+	set area=yes;
+}
+
+/* Een nagenoeg verticale wand tot kering van grond om afkalving van water te voorkomen, niet zijnde een kademuur. */
+*[voorkomen="walbescherming"] {
+	set barrier=wall;
+	set area=yes;
+}
+
+/* Een hekwerk of schutting, typisch ten behoeve van erfafscheiding. */
+*[voorkomen="hek"] {
+	set barrier=fence;
+	set area=yes;
+}
+
+/* Kunstmatige terreinafscheiding, niet zijnde een faunaraster, in de vorm van een overwegend houten, metalen of kunststoffen rechtopstaande palen met daartussen een of meerdere draden. */
+*[voorkomen="draadraster"] {
+	set barrier=fence;
+	set area=yes;
+}
+
+/* Kunstmatig aangebrachte scheiding van metaaldraad tussen palen, bedoeld voor het leiden van dieren. */
+*[voorkomen="faunaraster"] {
+	set barrier=fence;
 	set area=yes;
 }
 
